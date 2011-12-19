@@ -53,9 +53,9 @@ else return -1;
 unsigned int hash_func(char* k)
 {
         unsigned int hash = 1;
-
-        char* c; for(c = k; *c; c++)
-                hash += (hash << *c) - *c;
+        char* c;
+	for(c = k; *c; c++)
+        hash = *c+hash*31;
 
         return hash % TABLE_SIZE;
 }
