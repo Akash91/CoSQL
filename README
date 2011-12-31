@@ -1,0 +1,3 @@
+CoSQL is the term coined by Erik Meijer and Gavin Bierman which refers to co-relational model of dbms.
+
+This project deals with the implementation of server-client model of key value data store and to create a query language for CoSQL.
